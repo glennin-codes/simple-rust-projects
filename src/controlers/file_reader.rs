@@ -1,8 +1,8 @@
-use std::{fs::File, io::Read, path::Path};
+use std::{fs::File, io::Read, path::{Path, PathBuf}};
 
 use crate::custom_errors::FileError;
-pub fn read_file(path:&str)->Result<String,FileError>{
-let path=Path::new(path);
+pub fn read_file(path:PathBuf)->Result<String,FileError>{
+let path=Path::new(&path);
 if path.components().count() <1 || path.file_name().is_none(){
  
     return Err(FileError::InvalidInput{

@@ -22,10 +22,10 @@ This Rust project demonstrates file reading and writing operations with custom e
 ## Installation
 
 1. Clone the repository:
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    - git clone `https://github.com/glennin-codes/simple-rust-projects.git`
+    - cd simple-rust-projects.
  2. Build the project:
-   cargo build 
+    - cargo build 
 
 ## Usage
 
