@@ -1,6 +1,5 @@
 # simple-rust-projects
 
-
 # 1. File Reader and Writer
 
 - [source code](https://github.com/glennin-codes/simple-rust-projects/tree/main/src)
@@ -22,26 +21,39 @@ This Rust project demonstrates file reading and writing operations with custom e
 ## Installation
 
 1. Clone the repository:
-    -``` git clone https://github.com/glennin-codes/simple-rust-projects.git```
 
-    - ``txt cd simple-rust-projects.``
- 2. Build the project:
-    - ``cargo build ``
+```sh
+git clone https://github.com/glennin-codes/simple-rust-projects.git
+```
+
+```sh 
+cd simple-rust-projects
+```
+
+
+2. Build the project:
+```sh 
+cargo build
+ ```
 
 ## Usage
 
 Run the program with the following command:
-``cargo run -- <input_file> <output_file>``
-
+```sh
+ cargo run -- <input_file> <output_file>
+```
 
 - Replace `<input_file>` with the path to the file you want to read, and `<output_file>` with the path where you want to write the content.
 
+
 Example:
-cargo run -- home/usr/Documents/input.txt  output.txt
+```sh 
+cargo run -- home/usr/Documents/input.txt output.txt
+```
 
 #### or just run
-``cargo run .``
-    - defaults to the `file.txt` in the current directory as the input file and will write to `new.txt` file as the output.
+
+`cargo run .` - defaults to the `file.txt` in the current directory as the input file and will write to `new.txt` file as the output.
 
 ## Error Handling
 
@@ -55,11 +67,8 @@ This project uses custom error types defined with `thiserror`. The main error ty
 
 - `main.rs`: Entry point of the application
 - `custom_errors.rs`: Defines custom error types using `thiserror`
-- `controlers`: Contains functions for reading and writing files 
-        - `file_reader.rs`
-        -` write_file.rs`
+- `controlers`: Contains functions for reading and writing files - `file_reader.rs` -` write_file.rs`
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
