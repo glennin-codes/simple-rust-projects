@@ -5,7 +5,11 @@ pub fn read_file(path:&str)->Result<String,FileError>{
 let path=Path::new(path);
 if path.components().count() <1 || path.file_name().is_none(){
  
-    return Err(FileError::InvalidInput(format!("{:?}",path.display())))
+    return Err(FileError::InvalidInput{
+        expected:"directory/file.something or /file.something".to_string(),
+        found:format!("{:?}",path.display())
+        
+    })
 }
 
 let mut file=File::open(path)?;
