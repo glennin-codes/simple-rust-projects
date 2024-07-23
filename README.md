@@ -9,7 +9,7 @@ This Rust project demonstrates file reading and writing operations with custom e
 ## Features
 
 - Read content from a specified file
-- Write content to a new file
+- Then Writes its content to a new file
 - Custom error handling for various file operations
 - Input validation for file paths
 
@@ -53,7 +53,10 @@ cargo run -- home/usr/Documents/input.txt output.txt
 
 #### or just run
 
-`cargo run .` - defaults to the `file.txt` in the current directory as the input file and will write to `new.txt` file as the output.
+```sh 
+cargo run .
+```
+- defaults to the `file.txt` in the current directory as the input file and will write to `new.txt` file as the output file.
 
 ## Error Handling
 
