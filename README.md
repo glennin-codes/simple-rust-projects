@@ -22,20 +22,25 @@ This Rust project demonstrates file reading and writing operations with custom e
 ## Installation
 
 1. Clone the repository:
-    - git clone `https://github.com/glennin-codes/simple-rust-projects.git`
-    - cd simple-rust-projects.
+    -`` git clone https://github.com/glennin-codes/simple-rust-projects.git``
+    - ``cd simple-rust-projects.``
  2. Build the project:
-    - cargo build 
+    - ``cargo build ``
 
 ## Usage
 
 Run the program with the following command:
-cargo run -- <input_file> <output_file>
+``cargo run -- <input_file> <output_file>``
+
 
 - Replace `<input_file>` with the path to the file you want to read, and `<output_file>` with the path where you want to write the content.
 
 Example:
-cargo run -- input.txt output.txt
+cargo run -- home/usr/Documents/input.txt  output.txt
+
+#### or just run
+``cargo run .``
+    - defaults to the `file.txt` in the current directory as the input file and will write to `new.txt` file as the output.
 
 ## Error Handling
 
