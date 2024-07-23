@@ -3,7 +3,7 @@
 
 # 1. File Reader and Writer
 
-- [source code](simple-rust-projects/src)
+- [source code](https://github.com/glennin-codes/simple-rust-projects/tree/main/src)
 
 This Rust project demonstrates file reading and writing operations with custom error handling using the [thiserror](https://crates.io/crates/thiserror) crate.
 
