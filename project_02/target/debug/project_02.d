@@ -1,1 +1,0 @@
-/home/glen/Desktop/simple-rust-projects/project_02/target/debug/project_02: /home/glen/Desktop/simple-rust-projects/project_02/src/lib.rs /home/glen/Desktop/simple-rust-projects/project_02/src/main.rs
