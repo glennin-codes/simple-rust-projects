@@ -1,5 +1,5 @@
 
-use project_02::{Task, Time,TodoList,Control};
+use project_02::{Task, Time,TodoList,Control,Loadable};
 use serde::{Serialize, Deserialize};
 use chrono::{self, DateTime, Duration, NaiveDateTime, Utc};
 
@@ -58,7 +58,7 @@ use chrono::{self, DateTime, Duration, NaiveDateTime, Utc};
 
 
 
-let mut  list=TodoList::load_from_file("task.json")?;
+let mut  list:TodoList=TodoList::load_from_file("/home/glen/Desktop/simple-rust-projects/project_02/tasks.json").unwrap();
 // println!("list {:#?}",list);
 
 
@@ -94,6 +94,7 @@ let saved = TodoList::save_file( &list, "tasks.json");
   }
 
 TodoList::list_tasks(&list);
+println!("incompleted {:#?}",TodoList::list_uncompleted(&list));
 
     } 
 
